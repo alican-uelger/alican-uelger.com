@@ -24,11 +24,11 @@ jobs:
       - name: 🔨 Build
         run: hugo --minify
 
-      - name: 📂 Deploy SFTP
-        uses: milanmk/actions-file-deployer@master
+      - name: 📂 Deploy via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          remote-protocol: sftp
-          remote-path: /public_html
-          remote-host: ${{ secrets.FTP_HOST }}
-          remote-user: ${{ secrets.FTP_USER }}
-          remote-password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          source: "public/*"
+          target: "/public_html"
