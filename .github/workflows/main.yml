@@ -2,7 +2,7 @@ name: FTPS
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy:
