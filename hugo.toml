@@ -58,6 +58,12 @@ icon = "fa-brands fa-reddit fa-2x"
 weight = 5
 url = "https://www.reddit.com/user/Kitchen-Object-5642"
 
+[[params.social]]
+name = "Medium"
+icon = "fa fa-envelope fa-2x"
+weight = 6
+url = "mailto:contact@alican-uelger.com"
+
 [languages.en]
 languageName = ":uk:"
 

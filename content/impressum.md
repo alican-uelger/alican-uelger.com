@@ -5,7 +5,7 @@ Ali Can Ülger
 Adresse auf Anfrage
 13187 Berlin
 
-E-Mail: alican.uelger@gmail.com
+E-Mail: contact@alican-uelger.com
 
 **Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:**  
 Ali Can Ülger
@@ -22,7 +22,7 @@ Ali Can Ülger
 Address on request
 13187 Berlin, Germany
 
-Email: alican.uelger@gmail.com
+Email: contact@alican-uelger.com
 
 **Responsible for content according to § 18 Abs. 2 MStV:**  
 Ali Can Ülger
