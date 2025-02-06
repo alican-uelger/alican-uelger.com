@@ -24,12 +24,11 @@ jobs:
       - name: 🔨 Build
         run: hugo --minify
 
-      - name: 📂 Deploy via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: 📂 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          source: "public/*"
-          target: "/public_html"
-
+          local-dir: ./public/
+          server-dir: /public_html
