@@ -30,7 +30,7 @@ jobs:
         run: hugo --minify
 
       - name: 📦 Deploy via SFTP
-        uses: appleboy/sftp-action@v0.1.0
+        uses: appleboy/scp-action@v0.1.0
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
