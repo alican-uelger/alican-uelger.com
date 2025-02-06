@@ -1,0 +1,77 @@
+baseURL = 'http://alican-uelger.com/'
+title = 'Ali Can Ülger - Welcome to my DevOps Playground'
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+enableEmoji = true
+paginate = 25
+
+pygmentsStyle = "dracula"
+pygmentsCodeFencesGuessSyntax = true
+pygmentsCodeFences = true
+
+[params]
+author = "Ali Can Ülger"
+description = "Welcome to my DevOps Playground, I'm Ali Can Ülger! 👋"
+keywords = "blog,developer,personal"
+info = ["DevOps Engineer"]
+avatarURL = "images/avatar.jpeg"
+dateFormat = "January 2, 2006"
+since = 2025
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = []
+customSCSS = ["custom.scss"]
+customJS = []
+customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/alican-uelger"
+
+[[params.social]]
+name = "Gitlab"
+icon = "fa-brands fa-gitlab fa-2x"
+weight = 2
+url = "https://gitlab.com/alican.uelger"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 4
+url = "https://www.linkedin.com/in/alican-uelger"
+
+[[params.social]]
+name = "Medium"
+icon = "fa-brands fa-reddit fa-2x"
+weight = 5
+url = "https://www.reddit.com/user/Kitchen-Object-5642"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 2
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Impressum"
+weight = 4
+url = "impressum/"

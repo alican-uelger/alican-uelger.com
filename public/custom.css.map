@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sourceRoot": "/Users/alicanuelger/ide-projects/portfolio",
+	"sources": [
+		"assets/custom.scss"
+	],
+	"sourcesContent": [
+		"\n.navigation {\n  .navigation-title {\n    text-transform: none;\n  }\n\n\n}"
+	],
+	"names": [],
+	"mappings": "AACA,AACE,WADS,CACT,iBAAiB,CAAC;EAChB,cAAc,EAAE,IAAI,GACrB"
+}
