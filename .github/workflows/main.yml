@@ -30,11 +30,13 @@ jobs:
         run: hugo --minify
 
       - name: 📦 Deploy via SFTP
-        uses: appleboy/scp-action@v0.1.0
+        uses: appleboy/sftp-action@v0.1.0
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           source: "public/*"
-          target: "/public_html"
+          target: "public_html"
+          overwrite: true
+
