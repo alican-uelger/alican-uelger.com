@@ -6,7 +6,7 @@ genProjects:
 	export GITHUB_USER="alican-uelger" && \
 	./build/genProjects.sh
 
-build: genGitHubProjects
+build: genProjects
 	$(HUGO_BIN)
 
 demo:
