@@ -28,8 +28,8 @@ jobs:
         uses: milanmk/actions-file-deployer@master
         with:
           remote-protocol: sftp
-          remote-path: /
+          remote-path: /public_html
           remote-host: ${{ secrets.FTP_HOST }}
           remote-user: ${{ secrets.FTP_USER }}
-          remote-password: ${{ secrets.FTP_PASSWORD }}
+          #remote-password: ${{ secrets.FTP_PASSWORD }}
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
