@@ -15,6 +15,11 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: 🐛 Test SFTP Connection
+        run: |
+          sudo apt-get install -y lftp
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" -e "ls; bye" sftp://${{ secrets.FTP_HOST }}
+
       - name: 🤠 Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -33,4 +38,3 @@ jobs:
           port: 22
           source: "public/*"
           target: "/public_html"
-          key_exchange_algorithms: "curve25519-sha256,curve448-sha512,diffie-hellman-group-exchange-sha256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256"
