@@ -1,4 +1,4 @@
-name: FTPS
+name: FTPS Deployment
 
 on:
   push:
@@ -11,17 +11,20 @@ jobs:
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
-      - name: Setup Hugo
+      - name: 🤠 Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
+      - name: 🔨 Build
         run: hugo --minify
 
-      - name: 📂 SFTP-Deploy-Action
+      - name: 📂 Deploy SFTP
         uses: milanmk/actions-file-deployer@master
         with:
           remote-protocol: sftp
