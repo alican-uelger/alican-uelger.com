@@ -9,5 +9,8 @@ genProjects:
 build: genProjects
 	$(HUGO_BIN)
 
+deploy-build:
+	$(HUGO_BIN)
+
 demo:
 	$(HUGO_BIN) server -D
