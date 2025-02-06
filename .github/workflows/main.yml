@@ -24,12 +24,11 @@ jobs:
       - name: 🔨 Build
         run: hugo --minify
 
-      - name: 📂 Deploy via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: 📂 Deploy SFTP
+        uses: milanmk/actions-file-deployer@master
         with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "public/*"  # Passe dies an, falls du nur bestimmte Dateien hochladen willst
-          target: /public_html
-          strip_components: 1
+          remote-protocol: sftp
+          remote-path: /public_html
+          remote-host: ${{ secrets.FTP_HOST }}
+          remote-user: ${{ secrets.FTP_USER }}
+          remote-password: ${{ secrets.FTP_PASSWORD }}
